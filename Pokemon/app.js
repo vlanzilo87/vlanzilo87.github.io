@@ -13,8 +13,9 @@ $(() => {
                 $('#name').html(data.forms[0].name);
                 $('#ability').html(data.abilities[0].ability.name);
                 $('#base_experience').html(data.base_experience);
-                // $('input[type="text"]').empty(); for removing html elements
-                $('form').trigger('reset') // in order to empty the values so it depends on what you need and how your form works
+                $('#image').html(data.sprites.front_default)
+
+                $('form').trigger('reset')
             },
             ()=>{
                 console.log('bad');
