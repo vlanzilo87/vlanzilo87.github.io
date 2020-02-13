@@ -7,10 +7,21 @@ h1 {
   background-color: red;
   color: red;
 }
+h3 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
+dt {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 30px;
+}
 .pokémon_info {
   background-color: yellow;
   text-align: center;
   width: 800px;
+  height: 400px;
   margin: 40px auto 0 auto;
   border-style: solid;
   border-color: red;
@@ -27,7 +38,7 @@ img {
   height: 300px;
 }
 button {
-  margin-left: 47%;
+  margin-left: 45%;
   margin-top: 50px;
 }
 #modal {
@@ -43,8 +54,8 @@ button {
 }
 #modal-box {
 	background-color: white;
-	height: 350px;
-	width: 550px;
+	height: 300px;
+	width: 350px;
 	border-radius: 2px;
 	margin: 150px auto;
   padding: 5%;
@@ -63,6 +74,16 @@ button {
 #modal-footer {
   text-align: right;
 }
+#openModal {
+  padding: 20px 20px;
+  font-size: 15px;
+}
 #close {
   text-decoration: none;
+}
+dd {
+  margin-left: 0;
+  height: 20px;
+  padding: 5px 0;
+  font-size: 20px;
 }

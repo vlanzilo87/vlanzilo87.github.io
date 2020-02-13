@@ -13,7 +13,7 @@ $(() => {
                 $('#name').html(data.forms[0].name);
                 $('#ability').html(data.abilities[0].ability.name);
                 $('#base_experience').html(data.base_experience);
-                $('#image').html(data.sprites.front_default)
+                $('#image').attr("src", data.sprites.front_default);
 
                 $('form').trigger('reset')
             },
