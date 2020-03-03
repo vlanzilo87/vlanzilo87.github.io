@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
 
     <title>Index Page</title>
   </head>
   <body>
     <header>
-      <img src="https://ricardoe30.files.wordpress.com/2010/12/cropped-e30-banner1.jpg">
+      <div class="banner">
       <h1>Retro Auto Parts</h1>
+      </div>
     </header>
+    <nav>
+      <a href="/parts/new">Request New Part</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
     <h1>Parts Index</h1>
-    <div class="d-flex flex-wrap">
+    <div class="big-container">
       <% for (let i=0; i < allParts.length; i++) { %>
-        <a href="/parts/<%=i%>"><img src="<%=allParts[i].img%>" width="300" height="300"></a>
+      <div class="flex-container">
+        <a href="/parts/<%=i%>"><img src="<%=allParts[i].img%>" width="200" height="200"></a>
+        <br>
         <h4><%=allParts[i].name%></h4>
-        <form action="/parts/<%=i%>?_method=DELETE" method="POST">
-          <input type="submit" value="DELETE"/>
-        </form>
-        <a href="/parts/<%=i%>/edit">Edit</a>
-      <button type="button" name="buy">Buy</button>
+        <br>
+      </div>
       <% } %>
     </div>
-    <nav>
-      <a href="/parts/new">Create New Item</a>
-    </nav>
+    <footer>
+      <p>Thanks for visiting Retro Auto Parts!</p>
+    </footer>
   </body>
 </html>

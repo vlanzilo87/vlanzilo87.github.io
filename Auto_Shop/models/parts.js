@@ -15,78 +15,78 @@
 const parts = [
   {
     name: 'front bumper',
-    description: 'front end body part, color as shown',
-    img: 'https://cdn11.bigcommerce.com/s-a4990/images/stencil/1280x1280/products/1319/4023/Dorfman_Pacific_Tall_Top_Hat__53481.1501715473.jpg?c=2',
+    description: 'front body protection',
+    img: 'https://static.summitracing.com/global/images/prod/xlarge/bdy-bm1100119_xl.jpg?rep=False',
     price: 150,
     qty: 5
   },
   {
-    name: 'brake pads',
+    name: 'brake calipers',
     description: 'front and rear brake pads for both sides',
-    img: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572275827-nautica-peacoat-1572275806.jpg',
+    img: 'https://assets2.fcpeuro.com/public/assets/products/329601/large/open-uri20190731-19928-19qnxji.?1564602414',
     price: 75,
     qty: 20
   },
   {
     name: 'fuel pump',
     description: 'delivers fuel from tank to engine',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    img: 'https://www.partsgeek.com/assets/dimage/fulln/07416274-1801383.jpg',
     price: 50,
     qty: 10
   },
   {
     name: 'steering wheel',
     description: 'allows driver to turn vehicle',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    img: 'https://i.ebayimg.com/images/g/6iYAAOSw5rBbNGz1/s-l300.jpg',
     price: 50,
     qty: 10
   },
   {
-    name: 'tire set',
-    description: 'all 4 tires, all-season',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    name: 'wheel set',
+    description: 'all 4 rims, no tires',
+    img: 'https://www.hubcaphaven.com/mm5/graphics/00000001/aly59168.jpg',
     price: 50,
     qty: 10
   },
   {
     name: 'headlight',
     description: 'includes housing, wiring and bulb',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    img: 'https://assets3.fcpeuro.com/public/assets/products/122253/large/open-uri20140226-13157-qz2owh.?1496428846',
     price: 50,
     qty: 10
   },
   {
     name: 'maf sensor',
     description: 'helps measure air intake',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    img: 'https://assets2.fcpeuro.com/public/assets/products/113340/large/13627547981.jpg?1496426372',
     price: 50,
     qty: 10
   },
   {
     name: 'timing belt kit',
     description: 'replaces worn belt, includes pulley and tensioner',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    img: 'https://assets2.fcpeuro.com/public/assets/products/271580/large/open-uri20170601-15288-ryvtm7.?1496507720',
     price: 50,
     qty: 10
   },
   {
-    name: 'O2 sensor',
+    name: 'driveshaft',
     description: 'measures unburned oxygen in exhaust',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    img: 'https://assets4.fcpeuro.com/public/assets/products/275245/large/open-uri20170829-15408-1eedvrd.?1504039332',
     price: 50,
     qty: 10
   },
   {
     name: 'valve cover',
-    description: 'protects top of engine',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    description: 'https://assets2.fcpeuro.com/public/assets/products/154551/large/11127526445-1.jpg?1496435612',
+    img: 'https://assets2.fcpeuro.com/public/assets/products/154551/large/11127526445-1.jpg?1496435612',
     price: 50,
     qty: 10
   },
   {
     name: 'radiator',
     description: 'helps regulate engine temp',
-    img: 'https://m.media-amazon.com/images/I/71kYYu4lngL._SX700_.jpg',
+    img: 'https://www.autohausaz.com/images/17111468079.jpg',
     price: 50,
     qty: 10
   }
