@@ -5,24 +5,28 @@
     <title>Show Page</title>
   </head>
   <body>
-    <h1>Item Show Page</h1>
+    <h1>Part Show Page</h1>
     <p>
-      <img src="<%=item.img%>" width="300" height="300">
+      <img src="<%=part.img%>" width="300" height="300">
       <br>
-      <%=item.name%>
+      <%=part.name%>
       <br>
-      <%=item.price%>
+      <%=part.price%>
       <br>
-      <%=item.qty%>
+      <%=part.qty%>
     </p>
     <button type="button" name="buy">Buy</button>
     <br>
-    <a href="/items/<%=id%>/edit">Edit</a>
+    <a href="/parts/<%=id%>/edit">Edit</a>
     <br>
-    <form action="/items/<%=id%>?_method=DELETE" method="POST">
+    <form action="/parts/<%=id%>?_method=DELETE" method="POST">
       <input type="submit" value="DELETE"/>
     </form>
     <br>
-    <a href="/items">Back to Index</a>
+    <nav>
+      <a href="/parts/new">Request New Part</a>
+    </nav>
+    <br>
+    <a href="/parts">Back to Index</a>
   </body>
 </html>

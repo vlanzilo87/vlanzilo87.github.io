@@ -8,7 +8,7 @@ const app = express()
 const PORT = 3000
 
 //Data
-const items = require('./models/items.js')
+const parts = require('./models/parts.js')
 
 //Middleware
 app.use(express.static('public'))
@@ -17,46 +17,50 @@ app.use(methodOverride('_method'))
 
 //Routes
 //Index
-app.get('/items', (req, res) => {
+app.get('/parts', (req, res) => {
   res.render('index.ejs', {
-    allItems: items
+    allParts: parts
   })
 })
 
 //New (must be above show)
-app.get('/items/new', (req, res) => {
+app.get('/parts/new', (req, res) => {
   res.render('new.ejs')
 })
 
+//Welcome
+app.get('/', (req, res) => {
+  res.render('welcome.ejs')
+})
 //Seed (if needed)
 
 
 //Create
-app.post('/items', (req, res) => {
-  items.push(req.body)
-  res.redirect('/items')
+app.post('/parts', (req, res) => {
+  parts.push(req.body)
+  res.redirect('/parts')
 })
 
 //Edit
-app.get('/items/:id/edit', (req, res) => {
-  res.render('edit.ejs', {item: items[req.params.id], id: req.params.id})
+app.get('/parts/:id/edit', (req, res) => {
+  res.render('edit.ejs', {part: parts[req.params.id], id: req.params.id})
 })
 
 //Update
-app.put('/items/:id', (req, res) => {
-  items[req.params.id] = req.body
-  res.redirect('/items')
+app.put('/parts/:id', (req, res) => {
+  parts[req.params.id] = req.body
+  res.redirect('/parts')
 })
 
 //Delete
-app.delete('/items/:id', (req, res) => {
-  items.splice(req.params.id, 1)
-  res.redirect('/items')
+app.delete('/parts/:id', (req, res) => {
+  parts.splice(req.params.id, 1)
+  res.redirect('/parts')
 })
 
 //Show
-app.get('/items/:id', (req, res) => {
-  res.render('show.ejs', {item: items[req.params.id], id: req.params.id})
+app.get('/parts/:id', (req, res) => {
+  res.render('show.ejs', {part: parts[req.params.id], id: req.params.id})
 })
 
 //Listener

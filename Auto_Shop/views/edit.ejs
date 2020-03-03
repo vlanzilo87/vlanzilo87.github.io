@@ -5,14 +5,14 @@
         <title>Edit Page</title>
     </head>
     <body>
-      <h1>Edit Item Page</h1>
-      <form action="/items/<%=id%>?_method=PUT" method="POST">
-          Name: <input type="text" name="name" value="<%=item.name%>"/><br/>
-          Description: <input type="text" name="description" value="<%=item.description%>"/><br/>
-          Image: <input type="text" name="image" value="<%=item.img%>"/><br/>
-          Price: <input type="number" name="price" value="<%=item.price%>"/><br/>
-          Quantity: <input type="number" name="quantity" value="<%=item.qty%>"/><br/>
-          <input type="submit" value="Edit Item"/>
+      <h1>Edit Part Page</h1>
+      <form action="/parts/<%=id%>?_method=PUT" method="POST">
+          Name: <input type="text" name="name" value="<%=part.name%>"/><br/>
+          Description: <input type="text" name="description" value="<%=part.description%>"/><br/>
+          Image: <input type="text" name="image" value="<%=part.img%>"/><br/>
+          Price: <input type="number" name="price" value="<%=part.price%>"/><br/>
+          Quantity: <input type="number" name="quantity" value="<%=part.qty%>"/><br/>
+          <input type="submit" value="Edit Part"/>
       </form>
     </body>
 </html>
