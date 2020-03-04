@@ -16,6 +16,16 @@ app.use(express.urlencoded({extended: false}))
 app.use(methodOverride('_method'))
 
 //Routes
+//Welcome
+app.get('/', (req, res) => {
+  res.render('welcome.ejs')
+})
+
+//About
+app.get('/about', (req, res) => {
+  res.render('about.ejs')
+})
+
 //Index
 app.get('/parts', (req, res) => {
   res.render('index.ejs', {
@@ -27,13 +37,6 @@ app.get('/parts', (req, res) => {
 app.get('/parts/new', (req, res) => {
   res.render('new.ejs')
 })
-
-//Welcome
-app.get('/', (req, res) => {
-  res.render('welcome.ejs')
-})
-//Seed (if needed)
-
 
 //Create
 app.post('/parts', (req, res) => {

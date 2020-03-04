@@ -1,5 +1,5 @@
 body {
-  background: green;
+  background: darkgreen;
 }
 
 header {
@@ -8,7 +8,7 @@ header {
 
 h1 {
   text-align: center;
-  color: yellow;
+  color: lime;
   font-family: 'Faster One', cursive;
 }
 
@@ -30,15 +30,15 @@ nav {
 }
 
 .welcome {
-  background: url("https://pbs.twimg.com/media/C5tREVBU8AA7sZH.jpg");
+  background-image: url("https://pbs.twimg.com/media/C5tREVBU8AA7sZH.jpg");
   background-size: cover;
   background-position: center;
-  padding: 350px;
-  font-family: 'Faster One', cursive;
+  height: 100vh;
 }
 
 .enter {
   text-align: center;
+  font-family: 'Faster One', cursive;
 }
 
 .big-container {
@@ -46,6 +46,8 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 /* .flex-container {
@@ -64,9 +66,16 @@ nav {
   font-family: 'Faster One', cursive;
 }
 
+#new {
+  font-family: 'Faster One', cursive;
+}
+
 footer {
   text-align: center;
   background: purple;
   color: white;
-  padding: 10px;
+  padding-top: 10px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
